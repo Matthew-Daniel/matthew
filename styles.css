@@ -343,5 +343,9 @@ footer p {
     .contact-section .btn {
         padding: 8px 15px; /* Adjust button padding */
     }
-}
 
+    /* Logo size adjustment */
+    .logo {
+        width: 150px; /* Set a specific width for the logo on smaller screens */
+    }
+}
