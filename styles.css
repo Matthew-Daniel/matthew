@@ -50,6 +50,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #0056b3; /* Background color on hover */
 }
+
 .team-members {
     display: flex; /* Use flexbox for team members */
     justify-content: center; /* Center-align team members horizontally */
@@ -226,7 +227,7 @@ footer p {
     background-color: #0056b3; /* Background color on hover */
 }
 
-/* Signup and Contact Section Styles (Similar Styles) */
+/* Signup and Contact Section Styles (from provided CSS) */
 .signup-section,
 .contact-section {
     margin-top: 40px; /* Space above the sections */
@@ -262,15 +263,4 @@ footer p {
 .signup-section .btn:hover,
 .contact-section .btn:hover {
     background-color: #0056b3; /* Background color on hover */
-}
-
-/* Duplicate Footer Styles (already defined above) */
-footer {
-    text-align: center; /* Center-align text in the footer */
-    background-color: #f8f9fa; /* Background color for the footer */
-    padding: 20px 0; /* Padding top and bottom */
-}
-
-footer p {
-    font-size: 14px; /* Font size for footer text */
 }
