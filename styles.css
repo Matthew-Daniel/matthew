@@ -264,3 +264,84 @@ footer p {
 .contact-section .btn:hover {
     background-color: #0056b3; /* Background color on hover */
 }
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    /* Container */
+    .container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2.5em; /* Decrease font size for smaller screens */
+        margin-bottom: 15px; /* Adjust spacing */
+    }
+
+    .hero p {
+        font-size: 1em; /* Decrease font size for smaller screens */
+        margin-bottom: 20px; /* Adjust spacing */
+    }
+
+    /* Services Section */
+    .services {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid columns */
+        gap: 10px; /* Reduce gap between grid items */
+    }
+
+    .service-item {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .service-item img {
+        width: 100%; /* Set image width to 100% */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Adjust spacing */
+    }
+
+    .service-item h3 {
+        font-size: 1em; /* Decrease font size for smaller screens */
+        margin-bottom: 5px; /* Adjust spacing */
+    }
+
+    .service-item p {
+        font-size: 0.8em; /* Decrease font size for smaller screens */
+        margin-bottom: 10px; /* Adjust spacing */
+    }
+
+    /* Products Section */
+    .product-item img {
+        height: 150px; /* Decrease image height */
+        margin-bottom: 10px; /* Adjust spacing */
+    }
+
+    .product-item h3 {
+        font-size: 1.2em; /* Decrease font size for smaller screens */
+        margin-bottom: 5px; /* Adjust spacing */
+    }
+
+    .product-item p {
+        font-size: 0.9em; /* Decrease font size for smaller screens */
+        margin-bottom: 10px; /* Adjust spacing */
+    }
+
+    .product-item .btn {
+        padding: 8px 15px; /* Adjust button padding */
+    }
+
+    /* Signup and Contact Sections */
+    .signup-section input,
+    .signup-section textarea,
+    .contact-section input,
+    .contact-section textarea {
+        padding: 8px; /* Adjust input field padding */
+    }
+
+    .signup-section .btn,
+    .contact-section .btn {
+        padding: 8px 15px; /* Adjust button padding */
+    }
+}
+
