@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Tech Store - Contact Us</title>
+    <!-- Link to Google Fonts for Roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Logo of the Tech Store -->
+        <img src="logo.jpg" alt="Tech Store Logo" class="logo">
+    </header>
+
+    <!-- Main container for content -->
+    <div class="container">
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <!-- List of navigation items -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contact Us Section -->
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <!-- Contact Form -->
+            <form id="contact-form" action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright information -->
+        <p>&copy; 2024 ECC TECH</p>
+    </footer>
+</body>
+</html>

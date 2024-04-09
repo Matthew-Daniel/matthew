@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Tech Store</title>
+    <!-- Link to Google Fonts for Roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Script for dropdown functionality -->
+    <script>
+        // Function to toggle dropdown content
+        function toggleDropdown(dropdownId) {
+            var dropdownContent = document.getElementById(dropdownId);
+            if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+                dropdownContent.style.display = "block";
+            } else {
+                dropdownContent.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Logo of the Tech Store -->
+        <img src="logo.jpg" alt="Tech Store Logo" class="logo">
+    </header>
+
+    <!-- Hero section with background image -->
+    <div class="hero" style="background-image: url('modarg.jpg');">
+        <div class="hero-content">
+            <!-- Main heading in the hero section -->
+            <h1>Welcome to Our Tech Store</h1>
+            <!-- Subheading or description in the hero section -->
+            <p>Discover the latest gadgets and accessories.</p>
+            <!-- Button to explore more -->
+            <a href="#" class="btn">Explore Now</a>
+        </div>
+    </div>
+
+    <!-- Main container for content -->
+    <div class="container">
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <!-- List of navigation items -->
+				<li><a href="index.html">Home</a></li>
+                <!-- Link to Smartphones page -->
+                <li><a href="smartphones.html">Smartphones</a></li>
+                <!-- Link to Laptops page -->
+                <li><a href="laptops.html">Laptops</a></li>
+                <!-- Link to Accessories page -->
+                <li><a href="accessories.html">Accessories</a></li>
+                <!-- Link to Repair Services page -->
+                <li><a href="repair.html">Repair Services</a></li>
+            </ul>
+        </nav>
+
+        <!-- Section for displaying popular products -->
+        <div class="products">
+            <!-- Heading for popular products -->
+            <h2>Popular Products</h2>
+            <!-- Individual product item for Samsung S24 -->
+            <div class="product-item">
+                <!-- Image of the Samsung S24 -->
+                <img src="smartphones.jpg" alt="Latest Smartphone">
+                <!-- Title of the Samsung S24 -->
+                <h3>Samsung S24</h3>
+                <!-- Dropdown box for Samsung S24 -->
+                <div class="dropdown" id="samsung-dropdown" style="display: none;">
+                    <!-- Description of Samsung S24 -->
+                    <p>
+                        - 6.8-inch Dynamic AMOLED display with HDR10+ support and 120Hz refresh rate<br>
+                        - Snapdragon or Exynos processor (region-dependent) with 12GB RAM<br>
+                        - Triple camera system: 108MP main, 12MP ultra-wide, 48MP telephoto with Night Mode<br>
+                        - 5,000mAh battery with 45W fast charging and Wireless PowerShare<br>
+                        - Sleek design in Phantom Black, Mystic White, and Galactic Blue with in-display fingerprint sensor
+                    </p>
+                </div>
+                <!-- Button to toggle Samsung S24 dropdown -->
+                <button class="btn" onclick="toggleDropdown('samsung-dropdown')">Description</button>
+            </div>
+            <!-- Another product item for iPhone 15 -->
+            <div class="product-item">
+                <!-- Image of the iPhone 15 -->
+                <img src="iphone15.jpg" alt="Sleek Laptop">
+                <!-- Title of the iPhone 15 -->
+                <h3>iPhone 15</h3>
+                <!-- Dropdown box for iPhone 15 -->
+                <div class="dropdown" id="iphone-dropdown" style="display: none;">
+                    <!-- Description of iPhone 15 -->
+                    <p>
+                        - 6.7-inch OLED Super Retina XDR display with True Tone and ProMotion<br>
+                        - A14 Bionic chip with 8GB RAM<br>
+                        - Advanced 12MP main camera with improved Night Mode<br>
+                        - iOS [version] with enhanced Face ID<br>
+                        - All-day battery life, fast charging, and MagSafe support
+                    </p>
+                </div>
+                <!-- Button to toggle iPhone 15 dropdown -->
+                <button class="btn" onclick="toggleDropdown('iphone-dropdown')">Description</button>
+            </div>
+            <!-- Another product item for Google Pixel Pro -->
+            <div class="product-item">
+                <!-- Image of the Google Pixel Pro -->
+                <img src="googlepixel.jpg" alt="Google Pixel Pro">
+                <!-- Title of the Google Pixel Pro -->
+                <h3>Google Pixel Pro</h3>
+                <!-- Dropdown box for Google Pixel Pro -->
+                <div class="dropdown" id="pixel-dropdown" style="display: none;">
+                    <!-- Description of Google Pixel Pro -->
+                    <p>
+                        - 6.9-inch OLED display with 120Hz refresh rate<br>
+                        - Snapdragon or Tensor processor with 10GB RAM<br>
+                        - Pro-grade 108MP main, 12MP ultra-wide, 48MP telephoto cameras with AI features<br>
+                        - Latest Android [version] with guaranteed updates<br>
+                        - 5,500mAh battery, fast charging, wireless charging, and 5G connectivity
+                    </p>
+                </div>
+                <!-- Button to toggle Google Pixel Pro dropdown -->
+                <button class="btn" onclick="toggleDropdown('pixel-dropdown')">Description</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright information -->
+        <p>&copy; 2024 ECC TECH</p>
+    </footer>
+</body>
+</html>

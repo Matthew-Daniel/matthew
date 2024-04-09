@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Repair Services - ECC TECH</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Logo of the ECC TECH -->
+        <img src="logo.jpg" alt="ECC TECH Logo" class="logo">
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <!-- List of navigation items -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="laptops.html">Laptops</a></li>
+                <li><a href="smartphones.html">Smartphones</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main container for content -->
+    <div class="container">
+        <!-- Title and description for Repair Services section -->
+        <h1>Repair Services</h1>
+        <p>We offer repair services for smartphones, laptops, tablets, and more. Our experienced technicians are here to help.</p>
+        
+        <!-- Services section with service items -->
+        <div class="services">
+            <!-- Smartphone Repair -->
+            <div class="service-item">
+                <img src="smartphoner.jpg" alt="Smartphone Repair">
+                <h3>Smartphone Repair</h3>
+                <p>Cracked screen, battery replacement, water damage, and more.</p>
+                <!-- Button to toggle dropdown -->
+                <button class="btn" onclick="toggleDropdown('smartphone-repair-dropdown')">View Details</button>
+                <!-- Dropdown content for Smartphone Repair -->
+                <div class="dropdown" id="smartphone-repair-dropdown" style="display: none;">
+                    <!-- List of repair services for smartphones -->
+                    <p>Our skilled technicians can repair various smartphone issues, including:</p>
+                    <ul>
+                        <li>Screen Replacement</li>
+                        <li>Battery Replacement</li>
+                        <li>Water Damage Repair</li>
+                        <li>Charging Port Issues</li>
+                        <li>Software Troubleshooting</li>
+                    </ul>
+                    <p>Contact us for a free estimate on your smartphone repair needs.</p>
+                </div>
+            </div>
+            
+            <!-- Laptop Repair -->
+            <div class="service-item">
+                <img src="laptopr.jpg" alt="Laptop Repair">
+                <h3>Laptop Repair</h3>
+                <p>Broken screen, keyboard replacement, hardware upgrades, and more.</p>
+                <!-- Button to toggle dropdown -->
+                <button class="btn" onclick="toggleDropdown('laptop-repair-dropdown')">View Details</button>
+                <!-- Dropdown content for Laptop Repair -->
+                <div class="dropdown" id="laptop-repair-dropdown" style="display: none;">
+                    <!-- List of repair services for laptops -->
+                    <p>We specialize in repairing various laptop issues, including:</p>
+                    <ul>
+                        <li>Screen Replacement</li>
+                        <li>Keyboard Repair</li>
+                        <li>Hard Drive Replacement</li>
+                        <li>RAM Upgrades</li>
+                        <li>Overheating Problems</li>
+                    </ul>
+                    <p>Bring your laptop in for a diagnostic and let our experts take care of it.</p>
+                </div>
+            </div>
+            
+            <!-- Tablet Repair -->
+            <div class="service-item">
+                <img src="tabletr.jpg" alt="Tablet Repair">
+                <h3>Tablet Repair</h3>
+                <p>Touchscreen issues, battery problems, charging port repair, and more.</p>
+                <!-- Button to toggle dropdown -->
+                <button class="btn" onclick="toggleDropdown('tablet-repair-dropdown')">View Details</button>
+                <!-- Dropdown content for Tablet Repair -->
+                <div class="dropdown" id="tablet-repair-dropdown" style="display: none;">
+                    <!-- List of repair services for tablets -->
+                    <p>Our technicians are skilled in handling tablet repairs such as:</p>
+                    <ul>
+                        <li>Touchscreen Replacement</li>
+                        <li>Battery Replacement</li>
+                        <li>Charging Port Repair</li>
+                        <li>Software Optimization</li>
+                        <li>Button and Speaker Repair</li>
+                    </ul>
+                    <p>We can repair various tablet brands and models, including iPads, Samsung Galaxy Tabs, and more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright information -->
+        <p>&copy; 2024 ECC TECH</p>
+    </footer>
+
+    <!-- JavaScript function for dropdown toggle -->
+    <script>
+        // Function to toggle dropdown content
+        function toggleDropdown(dropdownId) {
+            var dropdownContent = document.getElementById(dropdownId);
+            if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+                dropdownContent.style.display = "block"; // Show dropdown
+            } else {
+                dropdownContent.style.display = "none"; // Hide dropdown
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Smartphones - ECC TECH</title>
+    <!-- Link to Google Fonts for Roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- JavaScript function for dropdown toggle -->
+    <script>
+        // Function to toggle dropdown content
+        function toggleDropdown(dropdownId) {
+            var dropdownContent = document.getElementById(dropdownId);
+            if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+                dropdownContent.style.display = "block"; // Show dropdown
+            } else {
+                dropdownContent.style.display = "none"; // Hide dropdown
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Logo of the ECC TECH -->
+        <img src="logo.jpg" alt="ECC TECH Logo" class="logo">
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <!-- List of navigation items -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="laptops.html">Laptops</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="repair.html">Repair Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main container for content -->
+    <div class="container">
+        <!-- Title and description for Smartphones section -->
+        <h1>Smartphones</h1>
+        <p>Discover the latest smartphones from top brands.</p>
+        
+        <!-- Featured Smartphones -->
+        <h2>Featured Smartphones</h2>
+        
+        <!-- Samsung Galaxy S30 -->
+        <div class="product-item">
+            <img src="samsungs30.jpg" alt="Samsung Galaxy S30">
+            <h3>Samsung Galaxy S30</h3>
+            <!-- Dropdown for additional details -->
+            <div class="dropdown" id="samsung-s30-dropdown" style="display: none;">
+                <p>- 6.5-inch Super AMOLED display with 120Hz refresh rate</p>
+                <p>- Snapdragon 895 processor with 12GB RAM</p>
+                <p>- Quad camera system: 108MP main, 12MP ultra-wide, 5MP macro, 5MP depth sensor</p>
+                <p>- 4,500mAh battery with 25W fast charging and wireless charging</p>
+                <p>- Available in Phantom Black, Mystic White, and Aura Blue</p>
+                <p>Price: $899</p>
+            </div>
+            <!-- Button to toggle dropdown -->
+            <button class="btn" onclick="toggleDropdown('samsung-s30-dropdown')">View Details</button>
+        </div>
+
+        <!-- Google Pixel 7 -->
+        <div class="product-item">
+            <img src="google7.jpg" alt="Google Pixel 7">
+            <h3>Google Pixel 7</h3>
+            <!-- Dropdown for additional details -->
+            <div class="dropdown" id="pixel-7-dropdown" style="display: none;">
+                <p>- 6.3-inch OLED display with 90Hz refresh rate</p>
+                <p>- Google Tensor 3 processor with 8GB RAM</p>
+                <p>- Dual rear cameras: 50MP main, 12MP ultra-wide</p>
+                <p>- 4,000mAh battery with 30W fast charging and wireless charging</p>
+                <p>- Android 14 with Pixel UI</p>
+                <p>Price: $799</p>
+            </div>
+            <!-- Button to toggle dropdown -->
+            <button class="btn" onclick="toggleDropdown('pixel-7-dropdown')">View Details</button>
+        </div>
+
+        <!-- OnePlus 12 Pro -->
+        <div class="product-item">
+            <img src="onepluspro.jpg" alt="OnePlus 12 Pro">
+            <h3>OnePlus 12 Pro</h3>
+            <!-- Dropdown for additional details -->
+            <div class="dropdown" id="oneplus-12-pro-dropdown" style="display: none;">
+                <p>- 6.7-inch Fluid AMOLED display with 120Hz refresh rate</p>
+                <p>- Qualcomm Snapdragon 898 processor with 12GB RAM</p>
+                <p>- Triple camera system: 48MP main, 50MP ultra-wide, 8MP telephoto</p>
+                <p>- 4,800mAh battery with 65W fast charging and 50W wireless charging</p>
+                <p>- OxygenOS based on Android 14</p>
+                <p>Price: $899</p>
+            </div>
+            <!-- Button to toggle dropdown -->
+            <button class="btn" onclick="toggleDropdown('oneplus-12-pro-dropdown')">View Details</button>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright information -->
+        <p>&copy; 2024 ECC TECH</p>
+    </footer>
+</body>
+</html>

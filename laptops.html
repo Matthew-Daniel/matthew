@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Laptops</title>
+    <!-- Link to Google Fonts for Roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- JavaScript function for dropdown toggle -->
+    <script>
+        // Function to toggle dropdown content
+        function toggleDropdown(dropdownId) {
+            var dropdownContent = document.getElementById(dropdownId);
+            if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+                dropdownContent.style.display = "block"; // Show dropdown
+            } else {
+                dropdownContent.style.display = "none"; // Hide dropdown
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Logo of the Tech Store -->
+        <img src="logo.jpg" alt="Tech Store Logo" class="logo">
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <!-- List of navigation items -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Previous</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main container for content -->
+    <div class="container">
+        <!-- Title and description for Laptops section -->
+        <h2>Laptops Available</h2>
+        <p>Here are some of the latest laptops available in our store:</p>
+        
+        <!-- MacBook Laptop Item with Dropdown -->
+        <div class="laptop-item">
+            <img src="laptop1.jpeg" alt="Laptop1">
+            <h3>MacBook Pro 2024</h3>
+            <!-- Dropdown box for MacBook -->
+            <div class="dropdown" id="macbook-dropdown" style="display: none;">
+                <p>
+                    - Experience ultimate performance with the new MacBook Pro.<br>
+                    - Powered by the latest Apple M2 chip, 16GB of RAM, and up to 2TB SSD storage.<br>
+                    - Perfect for creative professionals and power users.<br>
+                    - Available in various configurations to suit your needs.<br>
+                    - Price: $2499
+                </p>
+            </div>
+            <!-- Button to toggle MacBook dropdown -->
+            <button class="btn" onclick="toggleDropdown('macbook-dropdown')">View Details</button>
+        </div>
+
+        <!-- Dell Laptop Item with Dropdown -->
+        <div class="laptop-item">
+            <img src="laptop2.jpg" alt="Laptop2">
+            <h3>Dell XPS 15 2024</h3>
+            <!-- Dropdown box for Dell XPS -->
+            <div class="dropdown" id="dell-dropdown" style="display: none;">
+                <p>
+                    - Redefine productivity with the Dell XPS 15 2024 edition.<br>
+                    - Stunning 15.6" 4K OLED display, 11th Gen Intel Core i7 processor, and 32GB RAM.<br>
+                    - Perfect blend of power and portability for professionals.<br>
+                    - Price: $2099
+                </p>
+            </div>
+            <!-- Button to toggle Dell XPS dropdown -->
+            <button class="btn" onclick="toggleDropdown('dell-dropdown')">View Details</button>
+        </div>
+
+        <!-- HP Omen Laptop Item with Dropdown -->
+        <div class="laptop-item">
+            <img src="laptop3.jpg" alt="Laptop3">
+            <h3>HP Omen 2024</h3>
+            <!-- Dropdown box for HP Omen -->
+            <div class="dropdown" id="omen-dropdown" style="display: none;">
+                <p>
+                    - Dominate the gaming arena with the HP Omen 2024 laptop.<br>
+                    - Equipped with an AMD Ryzen 9 processor, NVIDIA RTX 3080 GPU, and 32GB RAM.<br>
+                    - Unparalleled gaming performance and speed.<br>
+                    - Price: $2999
+                </p>
+            </div>
+            <!-- Button to toggle HP Omen dropdown -->
+            <button class="btn" onclick="toggleDropdown('omen-dropdown')">View Details</button>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright information -->
+        <p>&copy; 2024 ECC TECH</p>
+    </footer>
+</body>
+</html>

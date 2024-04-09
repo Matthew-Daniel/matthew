@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Accessories - ECC TECH</title>
+    <!-- Link to Google Fonts for Roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- JavaScript function for dropdown toggle -->
+    <script>
+        // Function to toggle dropdown content
+        function toggleDropdown(dropdownId) {
+            var dropdownContent = document.getElementById(dropdownId);
+            if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+                dropdownContent.style.display = "block"; // Show dropdown
+            } else {
+                dropdownContent.style.display = "none"; // Hide dropdown
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Logo of the ECC TECH -->
+        <img src="logo.jpg" alt="ECC TECH Logo" class="logo">
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <!-- List of navigation items -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="laptops.html">Laptops</a></li>
+                <li><a href="smartphones.html">Smartphones</a></li>
+                <li><a href="repair.html">Repair Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main container for content -->
+    <div class="container">
+        <!-- Title and description for Accessories section -->
+        <h1>Accessories</h1>
+        <p>Explore our range of accessories including cases, chargers, headphones, and more for your devices.</p>
+        
+        <!-- Featured Accessories -->
+        <h2>Featured Accessories</h2>
+        
+        <!-- Product item 1: Phone Case -->
+        <div class="product-item">
+            <img src="accessory1.jpg" alt="Phone Case">
+            <h3>Phone Case</h3>
+            <!-- Dropdown for additional details -->
+            <div class="dropdown" id="phone-case-dropdown" style="display: none;">
+                <p>A durable and stylish case to protect your smartphone. Available in various colors.</p>
+                <p>Price: $19.99</p>
+            </div>
+            <!-- Button to toggle dropdown -->
+            <button class="btn" onclick="toggleDropdown('phone-case-dropdown')">View Details</button>
+        </div>
+        
+        <!-- Product item 2: Wireless Earbuds -->
+        <div class="product-item">
+            <img src="accessory2.jpg" alt="Wireless Earbuds">
+            <h3>Wireless Earbuds</h3>
+            <!-- Dropdown for additional details -->
+            <div class="dropdown" id="wireless-earbuds-dropdown" style="display: none;">
+                <p>Enjoy wireless freedom with our high-quality earbuds. Crystal clear sound and comfortable fit.</p>
+                <p>Price: $79.99</p>
+            </div>
+            <!-- Button to toggle dropdown -->
+            <button class="btn" onclick="toggleDropdown('wireless-earbuds-dropdown')">View Details</button>
+        </div>
+        
+        <!-- Product item 3: Fast Charger -->
+        <div class="product-item">
+            <img src="accessory3.jpg" alt="Fast Charger">
+            <h3>Fast Charger</h3>
+            <!-- Dropdown for additional details -->
+            <div class="dropdown" id="fast-charger-dropdown" style="display: none;">
+                <p>Rapidly charge your devices with our fast charger. Compact design for easy portability.</p>
+                <p>Price: $29.99</p>
+            </div>
+            <!-- Button to toggle dropdown -->
+            <button class="btn" onclick="toggleDropdown('fast-charger-dropdown')">View Details</button>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright information -->
+        <p>&copy; 2024 ECC TECH</p>
+    </footer>
+</body>
+</html>

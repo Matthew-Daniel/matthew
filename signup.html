@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Tech Store - Sign Up</title>
+    <!-- Link to Google Fonts for Roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to external JavaScript file for form validation -->
+    <script src="validation.js" defer></script>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Logo of the Tech Store -->
+        <img src="logo.jpg" alt="Tech Store Logo" class="logo">
+    </header>
+
+    <!-- Main container for content -->
+    <div class="container">
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <!-- List of navigation items -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sign Up Section -->
+        <section class="signup-section">
+            <h2>Sign Up</h2>
+            <!-- Sign-up form -->
+            <form id="signup-form" action="#">
+                <!-- Input fields for name, email, and password -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <!-- Submit button for the form -->
+                <input type="submit" value="Sign Up" class="btn">
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright information -->
+        <p>&copy; 2024 ECC TECH</p>
+    </footer>
+</body>
+</html>
